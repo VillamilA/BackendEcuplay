@@ -58,10 +58,46 @@ const deleteGameController = async (req, res) => {
     }
 }
 
+const getGamesByLocationController = async (req, res) => {
+    const { location } = req.params; 
+    try {
+        const games = await gameModel.getGamesByLocationModel(location);
+        const status = games.error ? 404 : 200; 
+        res.status(status).json(games);
+    } catch (error) {
+        res.status(500).json({ msg: "Error interno del servidor", error: error.message });
+    }
+}
+
+const getGamesByPriceController = async (req, res) => {
+    const { price } = req.params; 
+    try {
+        const games = await gameModel.getGamesByPriceModel(price);
+        const status = games.error ? 404 : 200; 
+        res.status(status).json(games);
+    } catch (error) {
+        res.status(500).json({ msg: "Error interno del servidor", error: error.message });
+    }
+};
+
+const getGamesByGenreController = async (req, res) => {
+    const { genre } = req.params; 
+    try {
+        const games = await gameModel.getGamesByGenreModel(genre);
+        const status = games.error ? 404 : 200; 
+        res.status(status).json(games);
+    } catch (error) {
+        res.status(500).json({ msg: "Error interno del servidor", error: error.message });
+    }
+};
+
 export {
     getAllGamesControllers,
     getGameControllerByID,
     createGameController,
     updateGameController,
-    deleteGameController
+    deleteGameController,
+    getGamesByLocationController,
+    getGamesByPriceController,
+    getGamesByGenreController
 }

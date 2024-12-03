@@ -61,6 +61,33 @@ const gameModel = {
         const peticion = await fetch(`${process.env.BDD_GAMES}/${gameId}`)
         const data = await peticion.json()
         return data
+    },
+
+
+    async getGamesByLocationModel(location) {
+        const response = await fetch(`${process.env.BDD_GAMES}/${location}`);
+        if (!response.ok) {
+            return { error: "No se encontraron juegos en la ubicación especificada" };
+        }
+        const data = await response.json();
+        return data;
+    },
+
+    async getGamesByPriceModel(price) {
+        const response = await fetch(`${process.env.BDD_GAMES}/${price}`);
+        if (!response.ok) {
+            return { error: "No se encontraron juegos con el precio especificado" };
+        }
+        const data = await response.json();
+        return data;
+    },
+    async getGamesByGenreModel(genre) {
+        const response = await fetch(`${process.env.BDD_GAMES}/${genre}`);
+        if (!response.ok) {
+            return { error: "No se encontraron juegos con el género especificado" };
+        }
+        const data = await response.json();
+        return data;
     }
 
 }
