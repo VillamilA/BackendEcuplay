@@ -1,4 +1,7 @@
 # GRUPO 1
+### Links Backend Beeceptor:
+[LINK BDD USERS](https://gamesusers.free.beeceptor.com/api/users)
+[LINK BDD GAMES](https://gamesss.free.beeceptor.com/api/games)
 
 ## Grupo integrado por:
 * Angel Villamil (Scrum Master)
@@ -25,6 +28,7 @@ El presente proyecto tiene como objetivo desarrollar un sistema backend que perm
 *	Definir rutas públicas y privadas por medio de JWT.
 Registro de Usuario encriptando su contraseña:
 ![image](https://github.com/user-attachments/assets/b4106b8d-3855-44c9-b1f7-b077f0b1004c)
+
 Login de Usuario generando el token:
 ![image](https://github.com/user-attachments/assets/9b3dc674-543a-4c57-944b-6210e994f344)
 
@@ -41,6 +45,7 @@ Conexion realizada en Cloudinary para guardar las imágenes subidas.
 ###	Configuración y deploy de BDD.
 *	Lado del Games BDD
 ![image](https://github.com/user-attachments/assets/74b8ca7a-6a8c-4d58-8748-513703e52646)
+
 Lado del Usuario BDD
 ![image](https://github.com/user-attachments/assets/d8ab2a74-607b-4247-8e39-5f15ddf15caa)
 
