@@ -22,6 +22,20 @@ El presente proyecto tiene como objetivo desarrollar un sistema backend que perm
 ## Sprint 1 Gestión - Tours
 •	Creación de endpoints para listar, crear, actualizar y eliminar juegos
 
+*Crear o añadir videojuego:
+![image](https://github.com/user-attachments/assets/75203e44-7b88-4cb4-87f2-c947ae346fa5)
+
+
+* Obtener todo los juegos:
+![image](https://github.com/user-attachments/assets/677b2e0d-308e-4e8b-a786-ada8b75e686f)
+
+* Eliminar un videojuego con ID:
+![image](https://github.com/user-attachments/assets/7d3ae34a-aa94-4c3f-95ad-f6631310df36)
+
+* Obtener videojuego por ID:
+![image](https://github.com/user-attachments/assets/586a5bcf-cb6d-46e4-baa3-2d7a1225ac43)
+
+
 ## Sprint 2 Gestión - Usuarios
 * Creación de endpoints para registro.
 *	Creación de endpoints para inicio de sesión.
@@ -36,7 +50,8 @@ Login de Usuario generando el token:
 ## Sprint 3 Gestión – Imágenes
 •	Configuración y carga de imágenes en Cloudinary.
 Conexion realizada en Cloudinary para guardar las imágenes subidas.
-![image](https://github.com/user-attachments/assets/fb72596d-6c1d-4031-981a-d0804eaeac0c)
+![image](https://github.com/user-attachments/assets/434e7246-daea-48f1-8041-d7048a4c6672)
+
 
 ## Sprint 4 Pruebas
 *	Pruebas unitarias.
